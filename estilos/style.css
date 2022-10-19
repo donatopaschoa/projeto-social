@@ -55,8 +55,8 @@ section#redes-sociais > a > img {
 }
 
 section#redes-sociais > a img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.6);
-    transform: translate(-3px, -3px);
+    border: 2px solid rgba(255, 255, 255, 0.6); /* criando uma borda em cada imagem */
+    transform: translate(-3px, -3px); /* Movendo o botãp p/ a esquerda e p/ cima */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-    transition: transform .3s, border .5s;
+    transition: transform .3s, border .5s; /* Fazendo um delay da movimentação anterior em .3s e aguardando .5s p/ aparecer a borda*/
 }
