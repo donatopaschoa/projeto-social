@@ -13,6 +13,7 @@ html, body {
 }
 
 body {
+    /* A imagem d madeira é a tela de fundo do body */
     background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
@@ -24,6 +25,7 @@ main {
 }
 
 section#telefone {
+    /* Esta section está com as dimensões do iPhone (alt e larg) o qual é a tela de fundo */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,28 +37,29 @@ section#telefone {
 }
 
 iframe#tela {
+    /* O iframe está dentro da section telefone, dentro das dimensões do display o qual mostrará a pág home.html */
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px; /* largura d0 display do iPhone */
+    width: 266px; /* largura d0 display do iPhone */
     height: 471px; /* altura d0 display do iPhone */
 }
 
 section#redes-sociais {
-    text-align: right;
+    text-align: right; /* colocando os botões à direita */
 }
 
 section#redes-sociais > a > img {
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
+    width: 50px; /* dimensões dos botões - qdo mostra somente a largura, a altura tb será a mesma */
+    margin: 10px; /* espaçamento enre os botões */
+    border-radius: 50%; /* faz os botões assumirem forma arredondada */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-    box-sizing: border-box; /* A borda foi redimencionada para a imagem */
+    box-sizing: border-box; /* A borda foi redimencionada para fazer parte da imagem */
 }
 
 section#redes-sociais > a img:hover {
     border: 2px solid rgba(255, 255, 255, 0.6); /* criando uma borda em cada imagem */
     transform: translate(-3px, -3px); /* Movendo o botãp p/ a esquerda e p/ cima */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-    transition: transform .3s, border .5s; /* Fazendo um delay da movimentação anterior em .3s e aguardando .5s p/ aparecer a borda*/
+    transition: transform .3s, border .5s; /* Fazendo um delay da movimentação anterior (transform) em .3s e aguardando .5s p/ aparecer a borda*/
 }
